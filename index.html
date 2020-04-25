@@ -23,7 +23,7 @@
 	<script src="js/util.js"></script>
 	<script src="js/respond.min.js"></script>
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-</head>
+</head>  
 <body>
     <div id="wrapper">
         <article id="home" class="panel special" style="display: flex;">
@@ -98,7 +98,7 @@
                         <h2>小伙伴们</h2>
                         <blockquote>无论何时都不要放弃，你永远不知道伤心的尽头会是什么，也许你会有一时的失落，但是要相信这个世界上会有人会关心你的.</blockquote>
                     </header>
-                    <p>Hi~ o(*￣▽￣*)ブ 老铁，欢迎访问我的主页，这是我的<a href="https://user.qzone.qq.com/386831085/infocenter" target="_blank"><b>空间地址</b></a>。<br></p><p>这是我的<a href="http://tv.knot-ido.top" target="_blank"><b>视频福利地址</b></a>。</p>
+                    <p>Hi~ o(*￣▽￣*)ブ 老铁，欢迎访问我的主页，这是我的<a href="https://user.qzone.qq.com/386831085/infocenter" target="_blank"><b>空间地址</b></a>。<br></p><p>这是我的<a href="http://tv.knot-ido.tk" target="_blank"><b>视频福利地址</b></a>。</p>
                     <ul class="actions">
                     	<li><a href="http://knot-ido.tk" target="_blank" class="button">喵主子博客</a>
                         </li>
@@ -213,6 +213,78 @@
             });
         })(jQuery);
     </script>
+</body>
+<!-- 小人代码-->
+<style type="text/css">
+img{border:0px;} #hao{position:fixed!important;position:absolute;right:0;bottom:0;top:expression(offsetParent.scrollTop+offsetParent.clientHeight-150);cursor:pointer;}
+</style>
+<div id="hao" style="width:100px;height:100px;z-index:9999;text-align:right">
+<div><a href="http://knot-ido.ml/BK" target="_blank"> <img src="https://i.loli.net/2019/03/06/5c7fe8102be4c.gif" width="100px" height="100px"></a></div>
+</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title></title>
+	<link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+<div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+
+<script>
+	var	playlist = [
+{title:"小公主",artist:"蒋家驹",mp3:"http://tu.kcblog.top/xgz.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b14be06ff.jpg?param=106x106",},
+
+{title:"东西",artist:"林俊呈",mp3:"http://tu.kcblog.top/dx.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b102dc736.jpg?param=106x106",},
+{title:"每一句都很甜",artist:"爱你音符",mp3:"http://tu.kcblog.top/myjdht.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b102dac5c.jpg?param=106x106",},
+{title:"小甜心",artist:"王逗逗",mp3:"http://tu.kcblog.top/xtx.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b10282ffb.jpg?param=106x106",},
+{title:"喜欢",artist:"阿肆",mp3:"http://tu.kcblog.top/xh.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b10247267.jpg?param=106x106",},
+{title:"广东十年爱情故事",artist:"雨神",mp3:"http://tu.kcblog.top/gdsnaqgs.mp3",cover:"https://i.loli.net/2019/04/15/5cb3b10233a2a.jpg?param=106x106",},
+];
+  var isRotate = true;
+  var autoplay = false;
+</script>
+<script src="js/player.js"></script>
+<script>
+
+function bgChange(){
+	var lis= $('.lib');
+	for(var i=0; i<lis.length; i+=2)
+	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+}
+window.onload = bgChange;
+</script>
+
 </body>
 
 </html>
