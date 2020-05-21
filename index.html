@@ -11,17 +11,17 @@
 	<meta name="author" content="喵主子,QSong#xxrar.com">
 	<meta name="keywords" content="喵主子" />
 	<meta name="description" content="">
-	<link rel='stylesheet' href='css/css.css' type='text/css'/>
-	<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css'/>
-	<link rel='stylesheet' href='css/style.css' type='text/css'/>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/knot-ido/ph/css/css.css' type='text/css'/>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/knot-ido/ph/css/font-awesome.min.css' type='text/css'/>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/knot-ido/ph/css/style.css' type='text/css'/>
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	<link rel="shortcut icon" type="image/ico" href="images/facicon.ico">
+	<link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/gh/knot-ido/ph/images/facicon.ico">
 	<title>KNOT-IDO 喵主子的领地</title>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/respond.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/skel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/util.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/respond.min.js"></script>
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 </head>  
 <body>
@@ -225,7 +225,7 @@ img{border:0px;} #hao{position:fixed!important;position:absolute;right:0;bottom:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title></title>
-	<link rel="stylesheet" href="css/player.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/knot-ido/ph/css/player.css">
 </head>
 <body>
 <div id="QPlayer">
@@ -258,8 +258,8 @@ img{border:0px;} #hao{position:fixed!important;position:absolute;right:0;bottom:
 <ol id="playlist"></ol>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.marquee.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/jquery.marquee.min.js"></script>
 
 <script>
 	var	playlist = [
@@ -274,7 +274,7 @@ img{border:0px;} #hao{position:fixed!important;position:absolute;right:0;bottom:
   var isRotate = true;
   var autoplay = false;
 </script>
-<script src="js/player.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/knot-ido/ph/js/player.js"></script>
 <script>
 
 function bgChange(){
@@ -307,7 +307,46 @@ useFlakeTrans: false
 <!--雪花飘落结束-->
 	
 <!--鼠标点击爱心特效-->
-<script> 	!function(e, t, a) { 		function r() { 			for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999"); 			requestAnimationFrame(r) 		} 		function n() { 			var t = "function" == typeof e.onclick && e.onclick; 			e.onclick = function(e) { 				t && t(), 					o(e) 			} 		} 		function o(e) { 			var a = t.createElement("div"); 			a.className = "heart", 				s.push({ 					el: a, 					x: e.clientX - 5, 					y: e.clientY - 5, 					scale: 1, 					alpha: 1, 					color: c() 				}), 				t.body.appendChild(a) 		} 		function i(e) { 			var a = t.createElement("style"); 			a.type = "text/css"; 			try { 				a.appendChild(t.createTextNode(e)) 			} catch(t) { 				a.styleSheet.cssText = e 			} 			t.getElementsByTagName("head")[0].appendChild(a) 		} 		function c() { 			return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")" 		} 		var s = []; 		e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || 			function(e) { 				setTimeout(e, 1e3 / 60) 			}, 			i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), 			n(), 			r() 	} (window, document); </script>
+<script> 
+	!function(e, t, a) 
+	{ 	
+		function r() 
+		{
+			for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";	transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999"); requestAnimationFrame(r) 		
+		} 
+		function n() 
+		{ 
+			var t = "function" == typeof e.onclick && e.onclick; e.onclick = function(e) 
+			{ 
+				t && t(), o(e) 		
+			} 		
+		} 	
+		function o(e) 
+		{ 		
+			var a = t.createElement("div"); a.className = "heart", s.push({ el: a, 	x: e.clientX - 5, y: e.clientY - 5, scale: 1,alpha: 1,color: c()}),t.body.appendChild(a) 		
+		} 		
+		function i(e) 
+		{ 			
+			var a = t.createElement("style"); a.type = "text/css";
+			try 
+			{
+				a.appendChild(t.createTextNode(e))
+			} 
+			catch(t) 
+			{ 	a.styleSheet.cssText = e 		
+			} 			
+			t.getElementsByTagName("head")[0].appendChild(a) 		
+		} 		
+		function c() 
+		{ 		
+			return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")" 	
+		} 	
+		var s = []; 		
+		e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function(e) 
+		{ 				
+			setTimeout(e, 1e3 / 60) 	
+		}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),n(), r() 	} (window, document); 
+	</script>
 <!--鼠标点击爱心特效结束-->
 </body>
 
